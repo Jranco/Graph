@@ -7,13 +7,13 @@
 
 import Foundation
 
-class GraphBase<VerticeType: Vertice, EdgeType: Edge>: Graph {
-	var direction: GraphDirection
-	var adjacency: [VerticeType: [VerticeType : EdgeType]] = [:]
-	var verticeDictionary: [VerticeType: VerticeType] = [:]
-	var verticeArray: [VerticeType] = []
+public class GraphBase<VerticeType: Vertice, EdgeType: Edge>: Graph {
+	public var direction: GraphDirection
+	public var adjacency: [VerticeType: [VerticeType : EdgeType]] = [:]
+	public var verticeDictionary: [VerticeType: VerticeType] = [:]
+	public var verticeArray: [VerticeType] = []
 
-	init(direction: GraphDirection) {
+	public init(direction: GraphDirection) {
 		self.direction = direction
 	}
 }

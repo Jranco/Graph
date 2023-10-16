@@ -7,5 +7,6 @@
 
 import Foundation
 
-protocol WeightedEdge: Edge, Comparable, ExpressibleByFloatLiteral {
+public protocol WeightedEdge: Edge, Comparable {
+	var weight: Double { get }
 }

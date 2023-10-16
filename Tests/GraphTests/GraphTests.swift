@@ -34,6 +34,10 @@ final class GraphTests: XCTestCase {
 }
 
 struct VerticeMock: Vertice {
+	static func < (lhs: VerticeMock, rhs: VerticeMock) -> Bool {
+		lhs.name < rhs.name
+	}
+	
 	var name: String
 }
 
